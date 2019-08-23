@@ -1,5 +1,5 @@
 const appKey = "6a42348f3f2db5f744296408f0807ef2";
-let weatherLocation = "London";
+let weatherLocation = "London"; // or you could take it from the innerHTML on the homepage?
 let weatherIcon = document.getElementById("weather-icon");
 
 let api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation + "&appid=" + appKey;
@@ -40,3 +40,4 @@ function changeScreen(screen) {
         contactScreen.style.transition = "all 2s";     // Standard syntax
     }
 }
+

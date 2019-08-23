@@ -12,10 +12,10 @@
     <script src="https://kit.fontawesome.com/e3fcc7f070.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Jack Daniels | Home</title>
+    <title>Jack Daniels | Contact</title>
 </head>
 
-<body>
+<body class="contact-bg">
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">J.D.</a>
@@ -25,64 +25,48 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact.html">Contact <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 
 
-    <!-- H O M E -->
-    <div class="home container">
+    <!-- C O N T A C T -->
+    <!-- <div class="section-heading">
+        <span>Contact</span>
+    </div>-->
+
+    <div class="contact container">
 
         <div class="row">
-            <div class="portrait col-5">
-                <img src="img/portrait.jpg" alt="">
-            </div>
             <div class="info col-7">
-                <h1>Jack Daniels</h1>
-                <div class="info-bar">
-                    <div class="job-title">Web Developer</div>
-                    <div class="location"><i class="fas fa-map-marker-alt"></i>London</div>
-                    <div class="weather" id="weather-icon"><i class="fas fa-sun"></i>Sunny</div>
-                </div>
+                <h1 class="text-center">Drop me a message...</h1>
 
-                <p>Hi I am a web developer from London, and creating websites is my passion!</p>
-                <p>I have experience with <span class="html-text">#HTML</span>, <span class="css-text">#CSS</span>, and
-                    <span class="js-text">#Javascript</span>. I have been coding for more than 10 years, and have worked
-                    on over 30 projects.</p>
+                <form action="https://formspree.io/email@domain.tld" method="POST">
+                    <label for="inputName">Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter name"><br>
+                    <label for="inputEmail">Email</label>
+                    <input type="email" name="_replyto" class="form-control" placeholder="Enter email"><br>
+                    <label for="inputEmail">Message</label><br>
+                    <textarea rows="5" name="message" id="message" placeholder="Type your message here" required=""
+                        class="form-control"></textarea><br>
+                    <input type="submit" value="Send" class="btn btn-light">
+                </form>
+            </div>
 
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <a href=""><img src="img/bakery.jpg" class="card-img" alt="..."></a>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Name</h5>
-                                <p class="card-text">I recently designed a website for a bakery called "Lucy's Cookies".
-                                    Go check it out!</p>
-                                <p class="card-text"><small class="text-muted">
-                                        <a href="">
-                                            <button type="button" class="btn btn-light">
-                                                View portfolio
-                                            </button>
-                                        </a>
-                                    </small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="portfolio col-5">
+                <img src="img/portrait2.jpg" alt="">
             </div>
         </div>
+
     </div>
 
 

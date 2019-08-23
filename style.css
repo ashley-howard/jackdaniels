@@ -1,3 +1,7 @@
+body {
+    height: 100vh;
+}
+
 a,
 a:hover {
     text-decoration: none;
@@ -99,9 +103,13 @@ footer .row {
     padding: 0 5px;
 }
 
-.contact {
+.contact-bg {
     background: rgb(40, 15, 4);
     background: linear-gradient(90deg, rgb(40, 15, 4) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.contact {
+
     color: white;
     margin-bottom: 15px;
 }
@@ -122,16 +130,16 @@ footer .row {
     font-family: 'Courgette', cursive;
 }
 
-.navbar a {
+/* .navbar a {
     color: #707070 !important;
-}
+} */
 
 .portrait {
     max-width: 420px;
 }
 
-
-.home {
+.home,
+.contact {
     top: 0;
     bottom: 0;
     position: absolute;
@@ -140,4 +148,23 @@ footer .row {
     left: 0;
     right: 0;
     margin-top: 20px;
+}
+
+.portfolio {
+    max-width: 100%;
+    padding: 0 !important;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    opacity: 0.6;
+}
+
+
+
+div#carouselExampleCaptions {
+    bottom: 40px;
 }
