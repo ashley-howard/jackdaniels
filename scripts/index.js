@@ -27,3 +27,16 @@ function httpRequestAsync(url, callback) {
     httpRequest.open("GET", url, true); // true for asynchronous 
     httpRequest.send();
 }
+
+const homeScreen = document.getElementById("home");
+const contactScreen = document.getElementById("contact");
+const screenButton = document.getElementById("screenbutton");
+
+function changeScreen(screen) {
+    if (screen === "contact") {
+        homeScreen.style.display = "none";
+        contactScreen.style.display = "block";
+        contactScreen.style.WebkitTransition = "all 2s"; // Code for Safari 3.1 to 6.0
+        contactScreen.style.transition = "all 2s";     // Standard syntax
+    }
+}
