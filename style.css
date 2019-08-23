@@ -105,11 +105,10 @@ footer .row {
 
 .contact-bg {
     background: rgb(40, 15, 4);
-    background: linear-gradient(90deg, rgb(40, 15, 4) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.21922272326899506) 100%);
 }
 
 .contact {
-
     color: white;
     margin-bottom: 15px;
 }
@@ -159,12 +158,10 @@ footer .row {
     height: 100vh;
 }
 
-.carousel-item img {
-    opacity: 0.6;
+#carouselExampleCaptions {
+    bottom: 40px;
 }
 
-
-
-div#carouselExampleCaptions {
-    bottom: 40px;
+.carousel-caption {
+    text-shadow: 4px 1px 6px black;
 }
