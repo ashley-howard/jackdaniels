@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/e3fcc7f070.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Jack Daniels | Home</title>
+    <title>J.D. | Home</title>
 </head>
 
 <body>
@@ -50,8 +50,9 @@
                 <h1>Jack Daniels</h1>
                 <div class="info-bar">
                     <div class="job-title">Web Developer</div>
-                    <div class="location"><i class="fas fa-map-marker-alt"></i>London</div>
-                    <div class="weather" id="weather-icon"><i class="fas fa-sun"></i>Sunny</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span id="weather-location">London</span></div>
+                    <div class="weather"><i id="weather-icon"></i><span id="weather-temp"></span></div>
+                    <span onclick="findWeatherDetails()">Update</span>
                 </div>
 
                 <p>Hi I am a web developer from London, and creating websites is my passion!</p>
@@ -66,11 +67,11 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Name</h5>
-                                <p class="card-text">I recently designed a website for a bakery called "Lucy's Cookies".
+                                <h5 class="card-title">Recent Project</h5>
+                                <p class="card-text">I recently designed a website for a bakery called "Lucy's Bakery".
                                     Go check it out!</p>
                                 <p class="card-text"><small class="text-muted">
-                                        <a href="">
+                                        <a href="/portfolio.html">
                                             <button type="button" class="btn btn-light">
                                                 View portfolio
                                             </button>
@@ -90,12 +91,11 @@
     <footer>
         <div class="row">
             <div class="col-4"><a href="mailto:contact@jackdaniels.com" target="_blank">contact@jackdaniels.com</a>
-                <!--This should load the contact form, then should change words to say "Go back home" -->
             </div>
             <div class="social col-4">
-                <a href="https:www.facebook.com/yourname"><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
+                <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="col-4">© Jack Daniels 2019</div>
         </div>

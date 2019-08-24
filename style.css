@@ -47,9 +47,24 @@ p {
     color: #6676a7;
 }
 
-.fa-sun {
+
+
+/* Weather Icons */
+.fa-sun,
+.fa-bolt {
     color: #ffbc00;
 }
+
+.fa-cloud,
+.fa-snowflake,
+.fa-smog {
+    color: #dbdbdb;
+}
+
+.fa-cloud-rain {
+    color: #9cc4d7;
+}
+
 
 .html-text {
     cursor: pointer;
@@ -81,23 +96,7 @@ textarea {
     width: 100%;
 }
 
-footer {
-    background-color: #f3f3f3;
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
 
-footer *,
-footer a:hover {
-    color: #959595;
-}
-
-footer .row {
-    margin: 0;
-}
 
 .social * {
     padding: 0 5px;
@@ -128,10 +127,6 @@ footer .row {
     font-family: 'Courgette', cursive;
 }
 
-/* .navbar a {
-    color: #707070 !important;
-} */
-
 .portrait {
     max-width: 420px;
 }
@@ -147,10 +142,9 @@ footer .row {
     right: 0;
 }
 
-/* .contact {
-    margin-top: 20px;
-} */
 
+
+/* -- Portfolio -- */
 .portfolio {
     max-width: 100%;
     padding: 0 !important;
@@ -166,4 +160,31 @@ footer .row {
 
 .carousel-caption {
     text-shadow: 4px 1px 6px black;
+}
+
+/* -- Footer -- */
+footer {
+    background-color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer *,
+footer a:hover {
+    color: #959595;
+}
+
+footer .row {
+    margin: 0;
+}
+
+.card-img {
+    border-radius: calc(.25rem - 1px);
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
 }
