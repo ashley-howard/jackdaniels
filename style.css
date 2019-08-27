@@ -15,7 +15,13 @@ a:hover {
 img {
     max-width: 100%;
     border-radius: 5px;
+    /* max-height: 100vh; */
 }
+
+/* .portrait img {
+    padding: 70px 0;
+    float: right;
+}  */
 
 .info {
     padding-top: 50px;
@@ -219,6 +225,10 @@ footer .row {
     .email,
     .copyright {
         display: none;
+    }
+
+    .row {
+        justify-content: center;
     }
 }
 

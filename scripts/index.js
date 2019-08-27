@@ -15,13 +15,26 @@ let api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation
 // snow <i class="fas fa-snowflake"></i>
 // mist <i class="fas fa-smog"></i>
 
+var userTime = new Date().getTime();
+let getUserTime = localStorage.getItem('userTime');
 
-// On load > check if weather is set
-//           > 1) if not, load it and save (also save current time)
-//           > 2) if set, check if 1 hour has passed
-//                        > if it has, repeat 1)
-//                        > if not, don't do anything
+// if userTime is not set, set it now, and load weather details. OR if userTime is more than 1 hour do this ... 3600000
+if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
+    userTime = new Date().getTime();
+    localStorage.setItem('userTime', userTime); // set time
+    findWeatherDetails();
+    setTimeout(function () {
+        localStorage.setItem('weatherIcon', weatherIcon.className); // set icon
+        localStorage.setItem('weatherTemp', temperature.innerText); // set temperature
+    }, 3000); // do this after 3 seconds
+}
 
+// dont reload weather, only retrieve icon and temp
+else {
+     weatherIcon.className = localStorage.getItem('weatherIcon'); // retrieve icon 
+     temperature.innerText = localStorage.getItem('weatherTemp'); // retrieve temp
+     console.log("one hour to go")
+}
 
 
 function findWeatherDetails() {
