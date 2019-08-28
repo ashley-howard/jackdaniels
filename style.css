@@ -197,18 +197,27 @@ footer .row {
     width: 100%;
 }
 
+.navbar-toggler {
+    font-size: 1rem;
+
+}
+
+.navbar-toggler:focus {
+    outline: 5px auto #999999;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         max-width: 100%;
         max-height: 100%;
     }
-    
+
     .portrait {
         display: none;
     }
 
     body {
-        background: url(img/portrait.jpg);
+        background: url(img/portrait-m.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
