@@ -136,11 +136,12 @@ textarea {
 }
 
 .home-bg .portrait {
-    max-width: 420px; 
+    max-width: 420px;
 }
 
 .contact-bg .portrait {
-    max-width: 100%; /* because this photo is a bit wider */ 
+    max-width: 100%;
+    /* because this photo is a bit wider */
 }
 
 .home,
@@ -166,6 +167,16 @@ textarea {
 .carousel-item {
     height: 100vh;
 }
+
+.w-100 {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.carousel-mob {
+    display: none;
+} 
 
 #carouselExampleCaptions {
     bottom: 40px;
@@ -264,6 +275,13 @@ footer .row {
         padding-top: 0;
         width: 80vw;
     }
+
+     .carousel-mob {
+        display: block;
+    }
+    .carousel-web {
+        display: none;
+    } 
 }
 
 @media only screen and (max-width: 1200px) {
