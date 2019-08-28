@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 100%;
 }
 
 a,
@@ -184,8 +184,6 @@ textarea {
 
 .carousel-caption {
     text-shadow: 4px 1px 6px black;
-    bottom: 66px;
-    position: fixed;
 }
 
 /* -- Footer -- */
@@ -284,6 +282,18 @@ footer .row {
 
     .carousel-web {
         display: none;
+    }
+
+    .carousel-caption {
+        top: 43%;
+    }
+
+    /* .carousel-indicators {
+        top: 50%
+    } */
+
+    .carousel-caption h5 {
+        font-size: 35px;
     }
 }
 
