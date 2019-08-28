@@ -29,13 +29,14 @@ if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
     }, 3000); // do this after 3 seconds
 }
 
-// dont reload weather, only retrieve icon and temp
+// don't reload weather, only retrieve icon and temp
 else {
      weatherIcon.className = localStorage.getItem('weatherIcon'); // retrieve icon 
      temperature.innerText = localStorage.getItem('weatherTemp'); // retrieve temp
-     console.log("one hour to go")
 }
 
+// time remaining until next update
+console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minutes until next weather update.")
 
 function findWeatherDetails() {
     httpRequestAsync(api, theResponse);
