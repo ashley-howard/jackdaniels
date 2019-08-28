@@ -178,9 +178,9 @@ textarea {
     display: none;
 }
 
-#carouselExampleCaptions {
+/* #carouselExampleCaptions {
     bottom: 40px;
-}
+} */
 
 .carousel-caption {
     text-shadow: 4px 1px 6px black;
@@ -259,6 +259,10 @@ footer .row {
 
     .contact h1 {
         font-size: 26px;
+    }
+
+    .portfolio-bg footer {
+        display: none;
     }
 }
 
