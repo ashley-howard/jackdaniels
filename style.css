@@ -176,7 +176,7 @@ textarea {
 
 .carousel-mob {
     display: none;
-} 
+}
 
 #carouselExampleCaptions {
     bottom: 40px;
@@ -184,6 +184,7 @@ textarea {
 
 .carousel-caption {
     text-shadow: 4px 1px 6px black;
+    bottom: 5%;
 }
 
 /* -- Footer -- */
@@ -276,12 +277,13 @@ footer .row {
         width: 80vw;
     }
 
-     .carousel-mob {
+    .carousel-mob {
         display: block;
     }
+
     .carousel-web {
         display: none;
-    } 
+    }
 }
 
 @media only screen and (max-width: 1200px) {
