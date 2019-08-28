@@ -199,7 +199,6 @@ footer .row {
 
 .navbar-toggler {
     font-size: 1rem;
-
 }
 
 .navbar-toggler:focus {
@@ -212,32 +211,38 @@ footer .row {
         max-height: 100%;
     }
 
-    .portrait {
-        display: none;
-    }
-
-    body {
-        background: url(img/portrait-m.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .info-bar {
-        justify-content: center;
-    }
-
-    .home {
-        background-color: #ffffffe3;
-        text-align: center;
-    }
-
+    .portrait,
     .email,
     .copyright {
         display: none;
     }
 
+    .home-bg {
+        background: url(img/portrait-m.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contact-bg {
+        background: url(img/portrait2-m.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .info-bar,
+    .contact,
     .row {
         justify-content: center;
+    }
+
+    .home,
+    .contact {
+        background-color: #ffffffe3;
+        text-align: center;
+    }
+
+    .contact h1 {
+        font-size: 26px;
     }
 }
 
