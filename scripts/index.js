@@ -36,7 +36,7 @@ else {
 }
 
 // time remaining until next update
-console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minutes until next weather update.")
+console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.")
 
 function findWeatherDetails() {
     httpRequestAsync(api, theResponse);
