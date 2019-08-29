@@ -184,6 +184,7 @@ textarea {
 
 .carousel-caption {
     text-shadow: 4px 1px 6px black;
+    bottom: 50px;
 }
 
 /* -- Footer -- */
