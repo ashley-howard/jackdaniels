@@ -127,7 +127,9 @@ p {
 }
 
 .home-bg .portrait {
-    max-width: 420px;
+    max-width: 59vh;
+    display: flex;
+    align-items: center;
 }
 
 textarea {
@@ -226,7 +228,7 @@ footer .row {
     .portrait,
     .email,
     .copyright {
-        display: none;
+        display: none !important;
     }
 
     .home-bg {
