@@ -62,11 +62,17 @@ p {
 
 .info-bar * {
     padding: 4px;
-} /* selects everything inside of info-bar */
+}
+
+/* selects everything inside of info-bar */
 
 .job-title {
     color: white;
-    background: linear-gradient(to right, #738ab9ad 0%, #465c889e 42%, #3f5580db 100%);
+    background: rgb(115, 138, 185);
+    background: -moz-linear-gradient(90deg, rgba(115, 138, 185, 0.6870098381149334) 0%, rgba(70, 92, 136, 0.6225840678068102) 42%, rgba(63, 85, 128, 0.8690826672465861) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(115, 138, 185, 0.6870098381149334) 0%, rgba(70, 92, 136, 0.6225840678068102) 42%, rgba(63, 85, 128, 0.8690826672465861) 100%);
+    background: linear-gradient(90deg, rgba(115, 138, 185, 0.6870098381149334) 0%, rgba(70, 92, 136, 0.6225840678068102) 42%, rgba(63, 85, 128, 0.8690826672465861) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#738ab9", endColorstr="#3f5580", GradientType=1);
 }
 
 .fa-map-marker-alt {
@@ -134,7 +140,10 @@ textarea {
 
 .contact-bg {
     background: rgb(40, 15, 4);
-    background: linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.21922272326899506) 100%);
+    background: -moz-linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.2248249641653537) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.2248249641653537) 100%);
+    background: linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.2248249641653537) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#280f04", endColorstr="#280f04", GradientType=1);
 }
 
 .home,
