@@ -195,8 +195,9 @@ textarea {
 }
 
 .contact-bg .portrait {
-    max-width: 100%;
-    /* because this photo is a bit wider */
+    max-width: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 /* --- F O O T E R --- */
