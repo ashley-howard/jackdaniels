@@ -31,12 +31,12 @@ if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
 
 // don't reload weather, only retrieve icon and temp
 else {
-     weatherIcon.className = localStorage.getItem('weatherIcon'); // retrieve icon 
-     temperature.innerText = localStorage.getItem('weatherTemp'); // retrieve temp
-}
+    weatherIcon.className = localStorage.getItem('weatherIcon'); // retrieve icon 
+    temperature.innerText = localStorage.getItem('weatherTemp'); // retrieve temp
 
-// time remaining until next update
-console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.")
+    // time remaining until next update
+    console.log(Math.trunc((3600000 - (userTime - Number(getUserTime))) / 60000) + " minute(s) until next weather update.")
+}
 
 function findWeatherDetails() {
     httpRequestAsync(api, theResponse);
@@ -67,7 +67,6 @@ function theResponse(response) {
     else {
         console.log("Icon error");
     }
-
 }
 
 function httpRequestAsync(url, callback) {
