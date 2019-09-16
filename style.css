@@ -131,7 +131,7 @@ p {
     width: 100%;
 }
 
-.home-bg .portrait {
+.index .portrait {
     max-width: 59vh;
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ textarea {
     padding: 0 5px;
 }
 
-.contact-bg {
+.contact {
     background: rgb(40, 15, 4);
     background: -moz-linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.2248249641653537) 100%);
     background: -webkit-linear-gradient(90deg, rgba(40, 15, 4, 1) 0%, rgba(40, 15, 4, 0.2248249641653537) 100%);
@@ -153,8 +153,8 @@ textarea {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#280f04", endColorstr="#280f04", GradientType=1);
 }
 
-.home,
-.contact {
+.index .container,
+.contact .container {
     top: 0;
     bottom: 0;
     position: absolute;
@@ -166,7 +166,7 @@ textarea {
 }
 
 /* --- P O R T F O L I O --- */
-.portfolio {
+.portfolio .container {
     max-width: 100%;
     padding: 0 !important;
 }
@@ -195,11 +195,11 @@ textarea {
 }
 
 /* --- C O N T A C T --- */
-.contact {
+.contact .container {
     color: white;
 }
 
-.contact-bg .portrait {
+.contact .portrait {
     max-width: 80vh;
     display: flex;
     align-items: center;
@@ -237,39 +237,39 @@ footer .row {
         display: none !important;
     }
 
-    .home-bg {
+    .index {
         background: url(img/portrait-m.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .contact-bg {
+    .contact {
         background: url(img/portrait2-m.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .info-bar,
-    .contact,
+    .contact .container,
     .row {
         justify-content: center;
     }
 
-    .home,
-    .contact {
+    .index .container,
+    .contact .container {
         background-color: #ffffffe3;
         text-align: center;
     }
 
-    .contact h1 {
+    .contact .container h1 {
         font-size: 26px;
     }
 
-    .portfolio-bg footer {
+    .portfolio footer {
         display: none;
     }
 
-    .contact-bg .row {
+    .contact .row {
         color: #707070;
     }
 }
@@ -279,11 +279,11 @@ footer .row {
         display: none;
     }
 
-    .contact-bg .portrait {
+    .contact .portrait {
         display: none;
     }
 
-    .contact-bg .info {
+    .contact .info {
         padding-top: 0;
         width: 80vw;
     }
