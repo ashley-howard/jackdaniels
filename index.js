@@ -1,5 +1,5 @@
 const appKey = "6a42348f3f2db5f744296408f0807ef2";
-const weatherUnit = "&units=metric"; // or "imperial" for fahrenheit
+const weatherUnit = "&units=metric"; // or "imperial" for fahrenheit - if doesn't update, it's because localstorage needs clearing
 let weatherLocation = document.getElementById("weather-location").innerHTML; // getting location from HTML
 let weatherIcon = document.getElementById("weather-icon");
 let temperature = document.getElementById("weather-temp");
@@ -18,7 +18,7 @@ let api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation
 var userTime = new Date().getTime();
 let getUserTime = localStorage.getItem('userTime');
 
-// if userTime is not set, set it now, and load weather details. OR if userTime is more than 1 hour do this ... 3600000
+// if userTime is not set, set it now and load weather details OR if userTime is more than 1 hour (3600000 ms) do this
 if (!getUserTime || userTime > (Number(getUserTime) + 3600000)) {
     userTime = new Date().getTime();
     localStorage.setItem('userTime', userTime); // set time

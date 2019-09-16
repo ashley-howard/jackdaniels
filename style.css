@@ -62,7 +62,7 @@ p {
 .info-bar {
     display: flex;
     padding-bottom: 20px;
-    text-align: center;
+  /*  text-align: center;*/
 }
 
 .info-bar * {
@@ -100,19 +100,19 @@ p {
     color: #9cc4d7;
 }
 
-.html-text {
+.h-text {
     background: -webkit-linear-gradient(#70c4ff, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.css-text {
+.c-text {
     background: -webkit-linear-gradient(#ff7070, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.js-text {
+.j-text {
     background: -webkit-linear-gradient(#70ff7b, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
