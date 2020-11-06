@@ -1,11 +1,26 @@
 const appKey = "6a42348f3f2db5f744296408f0807ef2";
-const weatherUnit = "&units=metric"; // or "imperial" for fahrenheit - if doesn't update, it's because localstorage needs clearing
+var weatherUnit = "&units=metric"; // or "imperial" for fahrenheit - if doesn't update, it's because localstorage needs clearing
 let weatherLocation = document.getElementById("weather-location").innerHTML; // getting location from HTML
 let weatherIcon = document.getElementById("weather-icon");
 let temperature = document.getElementById("weather-temp");
-let weatherUpdate = document.getElementById("update-weather")
+//let weatherUpdate = document.getElementById("update-weather")
 
-let api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation + "&appid=" + appKey + weatherUnit;
+function changeUnit() {
+    if (weatherUnit === "&units=metric") {
+        weatherUnit = "&units=imperial";
+     //   localStorage.clear();
+    }
+    else {
+        weatherUnit = "&units=metric";
+     //   localStorage.clear();
+    }
+}
+
+var api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation + "&appid=" + appKey + weatherUnit;
+
+
+
+
 
 // https://openweathermap.org/weather-conditions
 // clear <i class="fas fa-sun"></i>
@@ -78,3 +93,4 @@ function httpRequestAsync(url, callback) {
     httpRequest.open("GET", url, true); // true for asynchronous 
     httpRequest.send();
 }
+
