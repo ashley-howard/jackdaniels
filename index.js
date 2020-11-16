@@ -8,19 +8,15 @@ let temperature = document.getElementById("weather-temp");
 function changeUnit() {
     if (weatherUnit === "&units=metric") {
         weatherUnit = "&units=imperial";
-     //   localStorage.clear();
+        //   localStorage.clear();
     }
     else {
         weatherUnit = "&units=metric";
-     //   localStorage.clear();
+        //   localStorage.clear();
     }
 }
 
 var api = "https://api.openweathermap.org/data/2.5/weather?q=" + weatherLocation + "&appid=" + appKey + weatherUnit;
-
-
-
-
 
 // https://openweathermap.org/weather-conditions
 // clear <i class="fas fa-sun"></i>

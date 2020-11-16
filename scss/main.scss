@@ -1,8 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
 body {
     height: 100vh;
 }
@@ -40,36 +35,35 @@ p {
 .navbar {
     padding-top: 2px;
     padding-bottom: 2px;
-}
 
-.navbar-brand {
-    font-family: 'Courgette', cursive;
-}
 
-.navbar-toggler {
-    font-size: 1rem;
-}
+    &-brand {
+        font-family: 'Courgette', cursive;
+    }
 
-.navbar-toggler:focus {
-    outline: 5px auto #999999;
+    &-toggler {
+        font-size: 1rem;
+
+        &:focus {
+            outline: 5px auto #999999;
+        }
+    }
 }
 
 /* --- HOME --- */
 .info {
     padding-top: 50px;
-}
 
-.info-bar {
-    display: flex;
-    padding-bottom: 20px;
-    /*  text-align: center;*/
-}
+    &-bar {
+        display: flex;
+        padding-bottom: 20px;
+        /*  text-align: center;*/
 
-.info-bar * {
-    padding: 4px;
+        * {
+            padding: 4px;
+        }
+    }
 }
-
-/* selects everything inside of info-bar */
 
 .job-title {
     color: white;
@@ -165,14 +159,28 @@ textarea {
     justify-content: center;
 }
 
-/* --- P O R T F O L I O --- */
 .portfolio .container {
     max-width: 100%;
     padding: 0 !important;
 }
 
-.carousel-item {
-    height: 100vh;
+.carousel {
+    &-item {
+        height: 100vh;
+    }
+
+    &-mob {
+        display: none;
+    }
+
+    &-caption {
+        text-shadow: 4px 1px 6px black;
+        bottom: 50px;
+    }
+
+    &-indicators {
+        bottom: 27px;
+    }
 }
 
 .w-100 {
@@ -181,31 +189,18 @@ textarea {
     height: 100%;
 }
 
-.carousel-mob {
-    display: none;
+.contact {
+    .container {
+        color: white;
+    }
+
+    .portrait {
+        max-width: 80vh;
+        display: flex;
+        align-items: center;
+    }
 }
 
-.carousel-caption {
-    text-shadow: 4px 1px 6px black;
-    bottom: 50px;
-}
-
-.carousel-indicators {
-    bottom: 27px;
-}
-
-/* --- C O N T A C T --- */
-.contact .container {
-    color: white;
-}
-
-.contact .portrait {
-    max-width: 80vh;
-    display: flex;
-    align-items: center;
-}
-
-/* --- F O O T E R --- */
 footer {
     background-color: #f3f3f3;
     padding: 10px;
@@ -213,17 +208,16 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
 
-footer *,
-footer a:hover {
-    color: #959595;
-}
+    *,
+    a:hover {
+        color: #959595;
+    }
 
-footer .row {
-    margin: 0;
+    .row {
+        margin: 0;
+    }
 }
-
 
 @media only screen and (max-width: 768px) {
     .container {
@@ -279,30 +273,35 @@ footer .row {
         display: none;
     }
 
-    .contact .portrait {
-        display: none;
+    .contact {
+        .portrait {
+            display: none;
+        }
+
+        .info {
+            padding-top: 0;
+            width: 80vw;
+        }
     }
 
-    .contact .info {
-        padding-top: 0;
-        width: 80vw;
+    .carousel {
+        &-mob {
+            display: block;
+        }
+
+        &-web {
+            display: none;
+        }
+
+        &-caption {
+            top: 43%;
+
+            h5 {
+                font-size: 35px;
+            }
+        }
     }
 
-    .carousel-mob {
-        display: block;
-    }
-
-    .carousel-web {
-        display: none;
-    }
-
-    .carousel-caption {
-        top: 43%;
-    }
-
-    .carousel-caption h5 {
-        font-size: 35px;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
